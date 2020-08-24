@@ -10,6 +10,10 @@ export default class  Option extends Component{
         return(
                 <div>
                    {this.props.optionText}
+                   <button onClick={(e)=>{
+                       this.props.hd(this.props.optionText)
+                   }
+                }>delete</button>
                 </div>
 
         )

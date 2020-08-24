@@ -14,7 +14,7 @@ export default class Action extends Component{
 
             <div>
 
-                <button  onClick={this.callme}>Call me</button>
+                <button disabled={!this.props.hasOptions}  onClick={this.callme}>Call me</button>
             </div>
         )
     }
